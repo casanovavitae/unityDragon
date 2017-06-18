@@ -50,7 +50,7 @@ public class Powerup : Pickup {
     {
         if (collision.name == "Player")
         {
-            //Action
+            //Action  change this block 
         }
     }
 }
