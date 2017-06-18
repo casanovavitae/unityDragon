@@ -1,0 +1,27 @@
+﻿Buildings can be touched: they push the player out of the level.
+
+If the player goes out of the camera view, player loses 1 life and gets respawned.
+
+Flying enemies can fly over buildings.
+
+4-directional movement.
+
+Physics-based reflection. Reflection hitbox speed increases with levels/over time.
+
+Leaderboards (delight-feature is online leaderboards).
+
+Powerups are in buildings.
+Powerups are slowly absorbed towards the player (absorbtion distance needs to be tested).
+Powerups can either be manually or automatically activated (test it!).
+
+Sprite order: background -> road -> powerup -> building -> enemies -> player -> effects/projectiles.
+
+Some projectiles might be irreflectible???
+
+Checkpoints : when the player loses all lives, its position is set back to the latest checkpoint and the number of lives is reset.
+
+The Player's VisibilityTrigger (tag "PlayerPositionThing") is only meant to be used by ground enemies,
+so that they can check with a raycast whether they can see the player's "position" (they don't cast a ray directly toward
+the player, but directly in front of them, if they hit the VisibilityTrigger that means they can "see the player" and should
+therefore shoot). This only makes sense if the enemies only shoot forward and now directly at the player.
+In any case, ground enemies should not shoot at buildings.

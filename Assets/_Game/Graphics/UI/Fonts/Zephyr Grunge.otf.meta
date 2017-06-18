@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 6db5e25f981260f4db6b02d60afe197d
+timeCreated: 1496222344
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Zephyr Grunge
+  fontNames:
+  - Zephyr Grunge
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

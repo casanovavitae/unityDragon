@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a259dd3b47fed3e408cc5f365ff2f239
+timeCreated: 1496222344
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: BANGER
+  fontNames:
+  - BANGER
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 7e2e64da51117eb4ba51bd6ae22728b3, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

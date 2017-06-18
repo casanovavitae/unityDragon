@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 972f273e0035c0e4ab8de2bd2b0e8886
+timeCreated: 1496222344
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: WOODIE
+  fontNames:
+  - WOODIE
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 17cf91408e8606d42bff9b05790de45a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
