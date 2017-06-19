@@ -28624,6 +28624,7 @@ GameObject:
   - component: {fileID: 1443893014}
   - component: {fileID: 1443893016}
   - component: {fileID: 1443893015}
+  - component: {fileID: 1443893017}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -28704,6 +28705,18 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+--- !u!114 &1443893017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1443893013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d79e5d497adab834abb7a967318e3bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballInitialVelocity: 600
 --- !u!4 &1447810293 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4318665403000196, guid: 69a2ade06e3decf499e8c4139d5e6537,

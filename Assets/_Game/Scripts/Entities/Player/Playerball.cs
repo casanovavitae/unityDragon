@@ -6,13 +6,13 @@ public class Playerball : MonoBehaviour {
 
     public float ballInitialVelocity = 600f;
 
-    private Rigibody rb;
+    private Rigidbody2D rb;
     private bool ballInplay;
 
 	// Use this for initialization
 	void Awake () {
 
-        rb = GetComponet<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
 		
 	}
 	
@@ -23,7 +23,7 @@ public class Playerball : MonoBehaviour {
             transform.parent = null;
             ballInplay = true;
             rb.isKinematic = false;
-            rb.Addforce(new Vector 3(ballInitialVelocity, 0, 0));
+            rb.AddForce(new Vector3(ballInitialVelocity, 0, 0));
         }
     }
 }
