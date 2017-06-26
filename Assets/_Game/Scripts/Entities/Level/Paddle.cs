@@ -32,7 +32,7 @@ public class Paddle : MonoBehaviour
             Vector3 limitedPosition = transform.position;
             if (Mathf.Abs(limitedPosition.x) > freedom)
             {
-                //Paddle is outside the level so move it back in
+            
                 limitedPosition.x = Mathf.Clamp(transform.position.x, -freedom, freedom);
                 transform.position = limitedPosition;
             }
