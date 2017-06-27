@@ -15,8 +15,6 @@ public class Paddle : MonoBehaviour
             
             Plane p = new Plane(Vector3.up, transform.position);
 
-         
-            
                 //Use current position as starting point
                 Vector3 position = transform.position;
       
@@ -28,7 +26,6 @@ public class Paddle : MonoBehaviour
                 //The ray missed
             }
 
-           
             Vector3 limitedPosition = transform.position;
             if (Mathf.Abs(limitedPosition.x) > freedom)
             {

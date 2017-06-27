@@ -80,15 +80,15 @@ public class PlayerControl: MonoBehaviour{
 		}*/
 
 
-		/*
-		@João: change this so that only use is called
-		if(currentPowerUp!=null && (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl))) {
+		
+	
+		if(currentPowerup!=null && (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl))) {
 
-            currentPowerUp.Air();
+         // Powerup global  = PlayerControl.currentPowerup();
             //;currentPowerup.Use()
 		}
 
-        if (currentPowerUp != null && (Input.GetKeyDown(KeyCode.Q)))
+       /* if (currentPowerUp != null && (Input.GetKeyDown(KeyCode.Q)))
         {
             currentPowerUp.Air();
         }		*/    

@@ -11,7 +11,7 @@ public class Powerup : MonoBehaviour
 
     void Start()
     {
-        GetComponent<AudioSource>().playOnAwake = false;
+     ///   GetComponent<AudioSource>().playOnAwake = false;
     }
 
     // Update is called once per frame
@@ -22,7 +22,7 @@ public class Powerup : MonoBehaviour
 
     IEnumerator OnTriggerEnter(Collider other)
     {
-        //Only interact with the paddle
+        
         if (other.name == "Paddle")
         {
             OnPickup();

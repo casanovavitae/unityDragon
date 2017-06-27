@@ -41,11 +41,8 @@ public class Playerball : MonoBehaviour {
             //The ray missed
         }
 
-        //Make sure we start at the minimum speed limit
         launchDirection = launchDirection.normalized * MinimumSpeed;
-        launchDirection.z = Mathf.Abs(launchDirection.z);   //Prevent the user from shooting down
-
-        //Apply it to the rigidbody so it keeps moving into that direction (untill it hits a block or wall ofcourse)
+        launchDirection.z = Mathf.Abs(launchDirection.z);   
         GetComponent<Rigidbody>().velocity = launchDirection;
 
         hasBeenLaunched = true;
