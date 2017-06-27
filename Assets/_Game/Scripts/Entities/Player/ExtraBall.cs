@@ -13,7 +13,7 @@ public class ExtraBall : Powerup
         base.OnPickup();
 
         // Create a new ball and launch it
-        GameObject ball = Instantiate(PlayerballPrefab, transform.position, Quaternion.identity) as GameObject;
-        ball.GetComponent<Playerball>().Launch();
+        GameObject Playerball = Instantiate(PlayerballPrefab, transform.position, Quaternion.identity) as GameObject;
+        Playerball.GetComponent<Playerball>().Launch();
     }
 }

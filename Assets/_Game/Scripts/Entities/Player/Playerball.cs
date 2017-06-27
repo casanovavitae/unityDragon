@@ -10,11 +10,9 @@ public class Playerball : MonoBehaviour {
     private Rigidbody2D rb;
     private bool hasBeenLaunched = false;
     private bool ballInplay;
-
 	void Awake () {
 
         rb = GetComponent<Rigidbody2D>();
-		
 	}
     public void Launch()
     {
