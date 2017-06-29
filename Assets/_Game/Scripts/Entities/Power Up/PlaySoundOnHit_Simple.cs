@@ -1,9 +1,8 @@
 using UnityEngine;
 
-/* Make sure there is always an AudioSource component on the GameObject where this script is added.
+//Make sure there is always an AudioSource component on the GameObject where this script is added.
 [RequireComponent(typeof(AudioSource))]
-
-   public class PlaySoundOnHit_Simple : MonoBehaviour
+public class PlaySoundOnHit_Simple : MonoBehaviour
 {
     //Make the AudioClip configurable in the editor
     public AudioClip Sound;
@@ -20,5 +19,3 @@ using UnityEngine;
         audio.PlayOneShot(Sound);
     }
 }
-
-/*
