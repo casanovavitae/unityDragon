@@ -8,6 +8,8 @@ public class Powerup : Pickup {
     public Rigidbody2D rb;
 
     // P.U Use destroy all enemys
+	hbnklbnkhlbhlblhbhjbhjblhjbjh hhjbhlbhlbjlbjhlb
+	hlbhjbljbj
 	public void Use() {
 		Debug.Log("THE POWERUP HAS BEEN USED: PEW PEW PEW!!!");
         	for(int i = 0;i < Global.enemyManager.enemyList.Length;i++) {
