@@ -17,7 +17,7 @@ public class PlayerControl: MonoBehaviour{
 	public int reflectionToCooldownFactor; //how much longer the player can reflect as the cooldown
 	public GameObject hitCollider;
 	
-	public Powerup currentPowerup;
+	public PowerUpBase currentPowerup;
 
 	public AudioSource deathSoundSource;
 

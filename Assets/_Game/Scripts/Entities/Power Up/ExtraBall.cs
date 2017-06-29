@@ -5,7 +5,7 @@ using UnityEngine;
 public class ExtraBall : PowerUpBase
 {
     //Link to the BallPrefab which gets instantiated when the powerup is picked up
-    public GameObject BallPrefab;
+    public GameObject PlayerballPrefab;
 
     //Notice how we override we the OnPickup method of the base class  
     protected override void OnPickup()
@@ -14,7 +14,7 @@ public class ExtraBall : PowerUpBase
         base.OnPickup();
 
         //Create a new ball and launch it
-        GameObject ball = Instantiate(BallPrefab, transform.position, Quaternion.identity) as GameObject;
-        ball.GetComponent<Ball>().Launch();
+        GameObject Playerball = Instantiate(PlayerballPrefab, transform.position, Quaternion.identity) as GameObject;
+        Playerball.GetComponent<Playerball>().Launch();
     }
 }

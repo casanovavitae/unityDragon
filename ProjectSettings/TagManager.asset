@@ -24,9 +24,9 @@ TagManager:
   - Unselectable
   - PlayerBullets
   - ReflectionHitBox
-  - 
-  - 
-  - 
+  - Border
+  - PlayerBall
+  - Floor
   - 
   - 
   - 
