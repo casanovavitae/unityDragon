@@ -77,6 +77,10 @@ public class Reflection : MonoBehaviour {
 		for(int i = 0;i < sections.Length*2+1;i++) {
 			float y= yBottom + (sizeRatio / sections.Length) * i;
 			Gizmos.DrawLine(new Vector2(xLeft,y),new Vector2(xRight,y));
-		}
-	}
+        }
+    }
 }
+
+
+
+

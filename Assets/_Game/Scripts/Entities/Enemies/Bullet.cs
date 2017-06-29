@@ -44,23 +44,8 @@ public class Bullet : MonoBehaviour
 		transform.rotation=Quaternion.LookRotation(Vector3.forward, Vector3.Cross(Vector3.forward, direction));
     }
 
-
-	public void Reflect(Vector2 reflectionVector) { //@João: this whole thing with the powerup has to be changed
-		SetVelocity(Vector2.Reflect(direction,reflectionVector),speed);
-	}
-
-	void OnCollisionEnter2D(Collision2D other)
-	{
-		if(other.collider.CompareTag("Player")) {
-			SetVelocity(other.collider.GetComponent<Reflection>().getReflectionVector(other.contacts[0].point), speed);
-			gameObject.layer = LayerMask.NameToLayer("PlayerBullets");
-			//GetComponent<SpriteRenderer>().color = new Color32(100,100,100, 255);
-		} else {
-			SetVelocity(Vector2.Reflect(direction,other.contacts[0].normal),speed);
-		}
-		if(other.collider.gameObject.GetComponent<Health>() != null) {
-			other.collider.gameObject.GetComponent<Health>().TakeDamage(1);
-		}
-
-	}
 }
+
+
+
+

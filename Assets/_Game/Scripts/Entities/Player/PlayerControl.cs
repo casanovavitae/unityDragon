@@ -17,7 +17,7 @@ public class PlayerControl: MonoBehaviour{
 	public int reflectionToCooldownFactor; //how much longer the player can reflect as the cooldown
 	public GameObject hitCollider;
 	
-	public Powerup currentPowerup;
+	public PowerUpBase currentPowerup;
 
 	public AudioSource deathSoundSource;
 
@@ -80,18 +80,18 @@ public class PlayerControl: MonoBehaviour{
 		}*/
 
 
-		//////////////////////////////////////
-		//@João: change this so that only use is called
+		
+	
 		if(currentPowerup!=null && (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl))) {
 
-            currentPowerup.Air();
+         // Powerup global  = PlayerControl.currentPowerup();
             //;currentPowerup.Use()
 		}
 
-        if (currentPowerup != null && (Input.GetKeyDown(KeyCode.Q)))
+       /* if (currentPowerUp != null && (Input.GetKeyDown(KeyCode.Q)))
         {
-            currentPowerup.Air();
-        }		    
+            currentPowerUp.Air();
+        }		*/    
 
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
 				input += Vector2.left;
@@ -140,7 +140,9 @@ public class PlayerControl: MonoBehaviour{
 
 	void OnTriggerEnter2D(Collider2D other) {
 		if(other.GetComponent<Pickup>() != null) {
-			currentPowerup=(Powerup)other.GetComponent<Pickup>().PickThisUp();
+
+			//currentPowerup=(Powerup)other.GetComponent<Pickup>().PickThisUp();
+
 			currentPowerup.gameObject.SetActive(false);
 		}
 	}
