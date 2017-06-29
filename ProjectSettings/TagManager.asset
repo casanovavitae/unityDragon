@@ -7,6 +7,8 @@ TagManager:
   - PlayerPositionThing
   - Bullet
   - ui
+  - PlayerBall
+  - Bottom
   layers:
   - Default
   - TransparentFX
@@ -26,7 +28,7 @@ TagManager:
   - ReflectionHitBox
   - Border
   - PlayerBall
-  - Floor
+  - Bottom
   - 
   - 
   - 

@@ -4,8 +4,8 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody), typeof(BoxCollider), typeof(AudioSource))]
 public class PowerUpBase : MonoBehaviour    
 {
-    public float DropSpeed = 5; //How fast does it drop?
-    public AudioClip Sound; //Sound played when the powerup is picked up
+    public float DropSpeed = 5; 
+    public AudioClip Sound; 
 
     void Start()
     {
@@ -17,12 +17,11 @@ public class PowerUpBase : MonoBehaviour
     {
         transform.position += new Vector3(0, 0, -DropSpeed) * Time.deltaTime;
     }
-
-    //Monobehaviour method, notice the IEnumerator which tells unity this is a coroutine
+    
     IEnumerator OnTriggerEnter(Collider other)
     {
-        //Only interact with the paddle
-        if (other.name == "Paddle")
+        //Only interact with the player 
+        if (other.name == "Player")
         {
             //Notify the derived powerups that its being picked up
             OnPickup();
